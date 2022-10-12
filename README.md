@@ -32,4 +32,4 @@ The following animation demonstrates the application functionality:
 
 ![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./assets/img/demo.jpg)
 
-**Deployed application** : 
+**Deployed application** : https://begirlz.github.io/CodeQuiz/
