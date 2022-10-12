@@ -114,6 +114,7 @@ function countdown() {
     }, 1000);
 }
 
+//show current question on div
 function showQuestions(question, divQuizBox) {
     //store the output and the answer choices
     var output = [];
@@ -136,7 +137,7 @@ function showQuestions(question, divQuizBox) {
     //put HTML string on the page
     divQuizBox.innerHTML = output.join('');
 }
-
+//click start button
 function startButtonClick(e) {
     e.preventDefault;
     e.stopPropagation;
