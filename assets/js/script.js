@@ -54,7 +54,6 @@ function saveUserInitailsScore() {
 
     savedScore.textContent = "User: " + document.getElementById('initials').value + " Scored: " + score;
     questionsIndex = 0;
-    score = 0;
     divCountdown.textContent = '';
     timeLeft = null;
 }
@@ -145,6 +144,7 @@ function startButtonClick(e) {
     e.stopPropagation;
 
     timeLeft = 75;
+    score = 0;
     divStartBox.style.display = 'none';
     divQuizBox.style.display = 'block';
 
