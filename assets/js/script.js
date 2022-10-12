@@ -12,7 +12,7 @@ var savedInitailsBtn = document.getElementById('savedInitailsBtn');
 var savedScore = document.getElementById('savedScore');
 var finalScore = document.querySelector('#finalScore');
 
-var timeLeft = 75;
+var timeLeft;
 
 // Quiz variables
 var questionsIndex = 0;
@@ -35,7 +35,7 @@ document.getElementById('clearScore').addEventListener('click', function() {
     showScore();
 });
 
-//display high score
+//display saved score
 function showScore() {
     divStartBox.style.display = 'none'
     divQuizBox.style.display = 'none';
@@ -110,6 +110,8 @@ function countdown() {
             divCountdown.textContent = '';
         } else {
             clearInterval(timeInterval);
+            divQuizBox.style.display = 'none';
+            divUserScore.style.display = 'none';
         }
     }, 1000);
 }
