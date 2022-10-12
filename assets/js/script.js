@@ -73,25 +73,24 @@ const questions = [{
         question: "The condition of an if/else statement is enclosed within ______.",
         answers: ["1 - Quotes", "2 - Curly Brackets", "3 - Parentheses", "4 - Square Brackets"],
         correctAnswer: "3 - Parentheses"
+    }, {
+        id: 2,
+        question: "Arrays in Javascript can be used to store ______.",
+        answers: ["1 - Numbers and strings", "2 - Other Arrays", "3 - Booleans", "4 - All of the above", ],
+        correctAnswer: "4 - All of the above"
+    },
+    {
+        id: 3,
+        question: "String values must be enclosed within ______ when being assigned to variables.",
+        answers: ["1 - Quotes", "2 - Curly Brackets", "3 - Commas", "4 - Parentheses"],
+        correctAnswer: "1 - Quotes"
+    },
+    {
+        id: 4,
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        answers: ["1 - Javascript", "2 - console.log", "3 - Terminal/bash", "4 - For loops"],
+        correctAnswer: "2 - console.log"
     }
-    // ,{
-    //     id: 2,
-    //     question: "Arrays in Javascript can be used to store ______.",
-    //     answers: ["1 - Numbers and strings", "2 - Other Arrays", "3 - Booleans", "4 - All of the above", ],
-    //     correctAnswer: "4 - All of the above"
-    // },
-    // {
-    //     id: 3,
-    //     question: "String values must be enclosed within ______ when being assigned to variables.",
-    //     answers: ["1 - Quotes", "2 - Curly Brackets", "3 - Commas", "4 - Parentheses"],
-    //     correctAnswer: "1 - Quotes"
-    // },
-    // {
-    //     id: 4,
-    //     question: "A very useful tool used during development and debugging for printing content to the debugger is:",
-    //     answers: ["1 - Javascript", "2 - console.log", "3 - Terminal/bash", "4 - For loops"],
-    //     correctAnswer: "2 - console.log"
-    // }
 ];
 
 // Timer that counts down from 75
