@@ -73,7 +73,8 @@ const questions = [{
         question: "The condition of an if/else statement is enclosed within ______.",
         answers: ["1 - Quotes", "2 - Curly Brackets", "3 - Parentheses", "4 - Square Brackets"],
         correctAnswer: "3 - Parentheses"
-    }, {
+    },
+    {
         id: 2,
         question: "Arrays in Javascript can be used to store ______.",
         answers: ["1 - Numbers and strings", "2 - Other Arrays", "3 - Booleans", "4 - All of the above", ],
