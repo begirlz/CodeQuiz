@@ -1,0 +1,76 @@
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Verdana, sans-serif;
+    }
+    /* Set up header */
+    
+    .header {
+        align-content: center;
+    }
+    
+    .header a {
+        display: inline-block;
+    }
+    
+    #countdown {
+        float: right;
+        text-align: center;
+        margin: 0px auto;
+        display: block;
+    }
+    /* Set up container to be in center */
+    
+    #container {
+        margin: 5% auto;
+        text-align: center;
+        width: 40%;
+    }
+    /* Styling Quiz box section */
+    
+    #quizBox {
+        text-align: left;
+    }
+    
+    .question {
+        font-size: 300%;
+        padding: 2%;
+    }
+    
+    .answers {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 2%;
+    }
+    
+    input[type=button] {
+        font-size: 150%;
+        padding: 2%;
+        margin: 2%;
+        text-align: left;
+        background-color: pink;
+        border-radius: 5px;
+    }
+    /* Styling Result Box section */
+    
+    #resultBox {
+        font-size: 200%;
+        text-align: left;
+    }
+    
+    #userScore {
+        text-align: left;
+        font-size: 150%;
+    }
+    
+    #resultSpan,
+    #headerSpan {
+        font-weight: bold;
+        font-size: 300%;
+    }
+    
+    #HighScore {
+        font-weight: bold;
+        font-size: 200%;
+        background-color: azure;
+        text-align: left;
+    }

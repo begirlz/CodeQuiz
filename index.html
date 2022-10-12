@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Code Quiz</title>
 </head>
+
+
 <body>
-  <!-- Div to hold our link to high scores -->
+    <!-- Div header -->
+    <header class="header">
+        <!-- link to high scores -->
+        <a href="#" id="highScore">View Highscores</a>
+        <!-- timer -->
+        <div id="countdown"></div>
+    </header>
 
-  <!-- Div to hold our timer -->
-
-  <!-- Wrapper div to hold the rest of the content on our screen -->
-
-    <!-- Div for the start screen -->
-
-    <!-- Div for the questions -->
-
-    <!-- Div for the end screen -->
-
-    <!-- Div to dynamically display feedback to the user -->
+    <!-- Wrapper div to hold the rest of the content on our screen -->
+    <div id="container">
+        <!-- Div for the start screen -->
+        <div id="startBox">
+            <h1>Coding Quiz Challange</h1>
+            <p>
+                Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!
+            </p>
+            <input type="button" id="startButton" value="Start Quiz" />
+        </div>
+        <!-- Div for the questions -->
+        <div id="quizBox"></div>
+        <!-- Div for the end screen -->
+        <div id="resultBox"></div>
+        <!-- Div to dynamically display feedback to the user -->
+        <div id="userScore">
+            <span id="resultSpan">All done!</span>
+            <br>
+            <span id="finalScore">Your final score is </span>
+            <br>
+            <label for="initials">Enter initials: 
+            <input type="text" id="initials">
+            <input type="submit" value="Submit" id="userInitails">
+          </label>
+        </div>
+        <div id="divHighScore">
+            <span id="headerSpan">High scores</span>
+            <br>
+            <span id="HighScore"></span>
+            <br>
+            <input type="button" value="Go Back" id="goBack">
+            <input type="button" value="Clear high scores" id="clearScore">
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
