@@ -22,7 +22,6 @@ divStartBox.style.display = 'block';
 divUserScore.style.display = 'none';
 divSavedScore.style.display = 'none';
 
-
 //go to the landing msg
 document.getElementById('goBack').addEventListener('click', function() {
     divStartBox.style.display = 'block'
@@ -32,6 +31,7 @@ document.getElementById('goBack').addEventListener('click', function() {
 //clear saved score
 document.getElementById('clearScore').addEventListener('click', function() {
     score = 0;
+    localStorage.setItem('myScore', score);
     showScore();
 });
 
@@ -41,7 +41,8 @@ function showScore() {
     divQuizBox.style.display = 'none';
     divUserScore.style.display = 'none';
     divSavedScore.style.display = 'block';
-    savedScore.textContent = "User: " + document.getElementById('initials').value + " Scored: " + score;
+
+    savedScore.textContent = "User: " + document.getElementById('initials').value + " Scored: " + localStorage.getItem('myScore');
 }
 viewScoreBtn.addEventListener('click', showScore);
 
@@ -53,6 +54,8 @@ function saveUserInitailsScore() {
     divSavedScore.style.display = 'block';
 
     savedScore.textContent = "User: " + document.getElementById('initials').value + " Scored: " + score;
+    localStorage.setItem('myScore', score);
+
     questionsIndex = 0;
     divCountdown.textContent = '';
     timeLeft = null;
